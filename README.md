@@ -3,7 +3,7 @@ Here you go — a nicely formatted README in a markdown canvas style, with emoji
 ````markdown
 # 🚀 Bookio Backend
 
-Backend API server for **Bookio** — a real-time event ticket booking platform built with Node.js, Express & MongoDB.
+Backend API server for Bookio — a real-time event ticket booking platform built with Node.js, Express & MongoDB.
 
 ---
 

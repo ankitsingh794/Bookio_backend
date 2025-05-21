@@ -1,6 +1,6 @@
 const Feedback = require("../models/Feedback");
 const Event = require("../models/Events");
-const logger = require("../config/logger"); // adjust path to your logger
+const logger = require("../config/logger"); 
 
 // 1. App Support Feedback (any user)
 const submitAppSupportFeedback = async (req, res) => {

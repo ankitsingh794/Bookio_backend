@@ -1,7 +1,7 @@
 const Event = require('../models/Events');
 const cloudinary = require('../config/cloudinary');
 const streamifier = require('streamifier');
-const logger = require('../config/logger'); // Your winston logger
+const logger = require('../config/logger'); 
 
 // Helper: upload buffer to Cloudinary
 const uploadToCloudinary = (buffer) => {
@@ -170,7 +170,7 @@ exports.getNearbyEvents = async (req, res) => {
             type: 'Point',
             coordinates: [parseFloat(lng), parseFloat(lat)],
           },
-          $maxDistance: radius * 1000, // convert km to meters
+          $maxDistance: radius * 1000, 
         }
       }
     });

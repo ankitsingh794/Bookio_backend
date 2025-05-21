@@ -1,5 +1,5 @@
 const User = require('../models/User');
-const logger = require('../config/logger'); // Assuming you have a logger config
+const logger = require('../config/logger'); 
 
 exports.updateUserProfile = async (req, res) => {
   const userId = req.params.id;

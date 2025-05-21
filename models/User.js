@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const crypto = require('crypto');
-const logger = require('../config/logger'); // Assuming you have a logger setup
+const logger = require('../config/logger'); 
 
 const userSchema = new mongoose.Schema({
   name: {

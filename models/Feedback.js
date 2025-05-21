@@ -28,7 +28,7 @@ const feedbackSchema = new mongoose.Schema(
       },
     },
   },
-  { timestamps: { createdAt: true, updatedAt: false } } // use timestamps instead of manual createdAt
+  { timestamps: { createdAt: true, updatedAt: false } } 
 );
 
 const Feedback = mongoose.model('Feedback', feedbackSchema);

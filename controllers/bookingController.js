@@ -1,7 +1,7 @@
 const Booking = require("../models/Booking");
 const Event = require("../models/Events");
-const logger = require("../config/logger"); // import your winston logger
-const sendEmail = require("../utils/emailSender"); // placeholder email sender util
+const logger = require("../config/logger"); 
+const sendEmail = require("../utils/emailSender"); 
 
 // Helper: Validate ticketsBooked
 const validateTickets = (tickets, maxAvailable) => {
@@ -37,7 +37,7 @@ const createBooking = async (req, res) => {
       ticketsBooked,
       status: "pending",
       paymentStatus: "unpaid",
-      bookingDate: new Date(), // ensure this field exists in your Booking schema
+      bookingDate: new Date(), 
     });
 
     await newBooking.save();

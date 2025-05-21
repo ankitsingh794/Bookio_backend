@@ -13,7 +13,7 @@ const fileFilter = (req, file, cb) => {
     cb(null, true);
   } else {
     const error = new Error('Only images are allowed (jpeg, jpg, png, webp)');
-    error.status = 400; // Bad Request
+    error.status = 400;
     logger.warn(`File upload rejected: ${file.originalname} - Invalid file type`);
     cb(error);
   }
